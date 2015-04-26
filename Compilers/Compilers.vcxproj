@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5B9F02B1-7CFF-4AEC-A890-6580D57F9F06}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Compilers</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Parsers\Parser.h" />
+    <ClInclude Include="Scanners\AlternationExpression.h" />
+    <ClInclude Include="Scanners\CharArrayExpression.h" />
+    <ClInclude Include="Scanners\ConcatenationExpression.h" />
+    <ClInclude Include="Scanners\DFAConvert.h" />
+    <ClInclude Include="Scanners\EmptyExpression.h" />
+    <ClInclude Include="Scanners\Expression.h" />
+    <ClInclude Include="Scanners\ExpressionType.h" />
+    <ClInclude Include="Scanners\Lexicon.h" />
+    <ClInclude Include="Scanners\LiteralExpression.h" />
+    <ClInclude Include="Scanners\Scanner.h" />
+    <ClInclude Include="Scanners\SetTemplate.h" />
+    <ClInclude Include="Scanners\SourceReader.h" />
+    <ClInclude Include="Scanners\StarExpression.h" />
+    <ClInclude Include="Scanners\SymbolExpression.h" />
+    <ClInclude Include="Scanners\Token.h" />
+    <ClInclude Include="Scanners\TokenType.h" />
+    <ClInclude Include="Scanners\TreeExpression.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Parsers\Parser.cpp" />
+    <ClCompile Include="Scanners\AlternationExpression.cpp" />
+    <ClCompile Include="Scanners\CharArrayExpression.cpp" />
+    <ClCompile Include="Scanners\ConcatenationExpression.cpp" />
+    <ClCompile Include="Scanners\DFAConvert.cpp" />
+    <ClCompile Include="Scanners\EmptyExpression.cpp" />
+    <ClCompile Include="Scanners\LiteralExpression.cpp" />
+    <ClCompile Include="Scanners\main.cpp" />
+    <ClCompile Include="Scanners\Scanner.cpp" />
+    <ClCompile Include="Scanners\StarExpression.cpp" />
+    <ClCompile Include="Scanners\SymbolExpression.cpp" />
+    <ClCompile Include="Scanners\TreeExpression.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

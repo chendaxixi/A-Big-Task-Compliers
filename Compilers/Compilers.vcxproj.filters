@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scanners\ExpressionType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\Expression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\EmptyExpression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\SymbolExpression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\AlternationExpression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\ConcatenationExpression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\StarExpression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\CharArrayExpression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\LiteralExpression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\DFAConvert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\TreeExpression.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\SetTemplate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\TokenType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\Lexicon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\SourceReader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\Scanner.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanners\Token.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Parsers\Parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Scanners\TreeExpression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanners\DFAConvert.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanners\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanners\Scanner.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanners\AlternationExpression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanners\CharArrayExpression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanners\ConcatenationExpression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanners\EmptyExpression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanners\LiteralExpression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanners\StarExpression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scanners\SymbolExpression.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Parsers\Parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
